@@ -1,0 +1,465 @@
+*{
+    margin: 0;
+    padding: 0;
+font-family: 'Poppins', sans-serif;
+ }
+ .header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/IMG-20211214-WA0057.jpg);
+    background-position: right;
+    background-size: cover;
+    position: relative;
+
+ }
+::placeholder{
+   color:blanchedalmond;
+   text-align: -50%  50%;
+   align-items: center;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+  }
+.nav-links img{
+    width: 150px;
+    
+  }
+.nav-links{
+   flex: 1;
+   text-align: right;
+}
+.nav-links ul li{
+  display: inline-block;
+  padding: 8px 12px;
+  list-style: none;
+  position: relative;
+}
+.nav-links ul li a{
+     color: #fff;
+     text-decoration: none;
+     font-size: 13px;
+}
+.nav-links ul li::after{
+   content: '';
+   width: 0%;
+   height: 2px;
+   background: #fff;
+   display: block;
+   margin: auto;
+   transition: 0.5sec;
+ }
+.nav-links ul li:hover::after{
+     width: 100%;
+  }
+ 
+.text-box{
+   width: 90%;
+   color: #fff;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   text-align: center;
+}
+.text-box h1{
+   font-size: 62px;
+}
+.text-box p{
+   margin: 10px 0 40px;
+   font-size: 18px;
+   color: #fff;
+}
+
+nav .fa{
+   display: none;
+}
+
+@media(max-width: 700px){
+   .text-box h1{
+      font-size: 20px;
+   }
+   .nav-links ul li{
+   display: block;
+}
+   .nav-links{ 
+   position: absolute;
+   background: coral;
+   height: 100vh;
+   width: 130px;
+   top: 0;
+   right: -200px;
+   text-align: left;
+   z-index: 2;
+   transition: 1s;
+}
+   nav .fa{
+     display: block;
+     color: #fff;
+     margin: 10px;
+     font-size: 22px;
+     cursor: pointer;
+   }
+   .nav-links ul{
+      padding: 30px;
+   }
+}
+
+        /*---What We Serve---*/
+
+.Service{
+       width: 80%;
+       margin: auto;
+       text-align: center;
+       padding-top: 100px;
+}
+h1{
+   font-size: 36px;
+   font-weight: 600;
+}
+
+p{
+   color: rgb(5, 0, 3);
+   font-size: 14px;
+   font-weight: 300;
+   line-height: 22px;
+   padding: 10px;
+}
+.row{
+   margin-top: 10%;
+   display: flex;
+   justify-content: space-between;
+}
+.course-col{
+   flex-basis: 31%;
+   background: #fff3f3;
+   border-radius: 10px;
+   margin-bottom: 10%;
+   padding: 20px 12px;
+   box-sizing: border-box;
+   transition: 0.5s;
+}
+h3{
+   text-align: center;
+   font-weight: 600;
+   margin: 10px 0;
+}
+.course-col:hover{
+   box-shadow:  0 0 20px 0px rgba(0,0,0,0.2);
+
+}
+@media(max-width: 700px){
+   .row{
+      flex-direction: column;
+   }
+}
+/*Campus*/
+.Aim{
+   width: 80%;
+   margin: auto;
+   text-align: center;
+   padding-top: 50px;
+}
+.Aim p{
+   width: 100%;
+   text-align: center;
+   border-radius: 20px;
+   font-size: 18px;
+}
+.Aim-col{
+   flex-basis: 32%;
+   border-radius: 10px;
+   margin-bottom: 30px;
+   position: relative;
+   overflow: hidden;
+}
+.Aim-col img{
+   width: 100%;
+   display: block;
+}
+.layer{
+   background: transparent;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   top: 0;
+   left: 0;
+   transition: 0.5s;
+} 
+.layer:hover{
+   background: rgba(4,9,30,0.7);
+   
+}
+.layer h3{
+   width: 100%;
+   font-weight: 500;
+   color: #fff;
+   font-size: 26px;
+   bottom: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   position: absolute;
+   opacity: 0;
+   transition: 0.5s;
+}
+
+.layer:hover h3{
+   opacity: 1;
+   bottom: 49%;
+}
+
+
+/*---DEPARTMENT----*/
+
+
+.DEPARTMENT{
+   width: 90%;
+   margin: auto;
+   text-align: center;
+   padding-top: 100px;
+   
+}
+.DEPARTMENT p{
+   width: 100%;
+   text-align: center;
+   border-radius: 20px;
+   font-size: 18px;
+}
+.DEPARTMENT-col{
+   flex-basis: 31%;
+   border-radius: 10px;
+   margin-bottom: 5%;
+   text-align: left;
+}
+.DEPARTMENT-col img{
+   width: 100%;
+   border-radius: 10px;
+}
+
+
+
+/*---cta---*/
+
+
+.cta{
+   margin: 100px auto;
+   width: 80%;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(images/download\ \(1\).jfif);
+   background-position: center;
+   background-size: cover;
+   border-radius: 10px;
+   text-align: center;
+   padding: 100px 0;
+}
+.cta h1{
+   color: seashell;
+   margin-bottom: 40px;
+   padding: 0px;
+}
+
+@media(max-width: 700px){
+   .cta h1{
+      font-size: 24px;
+   }
+}
+.footer{
+   width: 100%;
+   text-align: center;
+   padding: 30px 0;
+
+}
+.footer h4{
+   margin-bottom: 25px;
+   margin-top: 20px;
+   font-weight: 600;
+}
+.icons .fa{
+   color: (rgba(0, 0, 0, 0.7));
+   margin: 0 13px;
+   cursor: pointer;
+   padding: 18px 0;
+}
+.fa-heart-o{
+   color: #f44336;
+}
+
+
+/*!------about us page------*/
+.sub-header{
+   height: 50vh;
+   width: 100%;
+   background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/IMG-20211212-WA0028.jpg);
+   background-position: center;
+   background-size: cover;
+   text-align: center;
+   color: #fff;
+}
+.sub-header h1{
+   margin-top: 100px;
+}
+/*!-----------------------*/
+
+
+.Faculty{
+   width: 90%;
+   margin: auto;
+   text-align: center;
+   padding-top: 100px;
+   
+}
+.Faculty p{
+   width: 100%;
+   text-align: center;
+   border-radius: 20px;
+   font-size: 20px;
+
+}
+.Faculty-col img{
+   width: 12%;
+   display: block;
+   border-radius: 10px;
+   border-color: black;   
+}
+
+.Faculty-col p{
+   width: 100%;
+   text-align: center;
+   border-radius: 10px;
+   font-size: 15px;
+}
+.Faculty-col h1{
+   text-align: center;
+   font-size: 27px;
+   margin: 10px 0;
+   font-weight: 700;
+   width: 100%;
+}
+.Faculty-col h2{
+   width: 100%;
+   font-size: 24px;
+   position: relative;
+   font-weight: 600;
+   margin: 10px 0;
+   text-align: center;   
+}
+
+.comment-box{
+   border: 1px solid #ccc;
+   margin: 30px 0;
+   padding: 10px 20px;
+}
+.comment-box h3{
+   text-align: left;
+}
+.comment-form input, .comment-form textarea{
+     width: 100%;
+     padding: 10px;
+     margin: 20px 0px;
+     box-sizing: border-box;
+     border: none;
+     outline: none;
+     background: #f0f0f0;
+   
+   }
+   .sub-header{
+      height: 50vh;
+      width: 100%;
+      background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/IMG-20211212-WA0028.jpg);
+      background-position: center;
+      background-size: cover;
+      text-align: center;
+      color: #fff;
+   }
+   .sub-header h1{
+      margin-top: 100px;
+   }
+
+
+
+   /*!----------course----------*/
+
+
+
+.Course{
+   width: 98%;
+   text-align: center;
+   background: #f0f0f0;
+   padding: 0 13px ;
+       
+}
+
+.course-col{
+   width: 100%;
+   text-align: center;
+   border-radius: 25px;
+   font-size: 30px;  
+   font-style: inherit;
+  
+}
+
+.Course-col p{
+   width: 100%;
+   text-align: center;
+   border-radius: 20px;
+   font-size: 20px;
+   
+}
+
+.Course-col h1{
+   text-align: center;
+   font-size: 35px;
+   margin: 10px 0;
+   font-weight: 700;
+   width: 100%;
+   
+}
+
+.Course-col h2{
+   width: 100%;
+   font-size: 30px;
+   position: relative;
+   font-weight: 600;
+   margin: 10px 0;
+   text-align: center;  
+    
+}
+.About h1{
+    text-align: center;
+    font-size: 35px;
+    margin: auto;
+
+}
+.About p{
+   text-align: center;
+   margin: auto;
+   width: 80%;
+
+}
+.About h2{
+   text-align: center;
+   font-size: 30px;
+   margin: auto;
+
+}
+.LABORATRIES{
+   background-color: antiquewhite;
+}
+.LABORATRIES h1{
+   text-align: center;
+   font-size: 30px;
+   margin: auto;
+
+}
+.LABORATRIES h2{
+   text-align: center;
+   font-size: 20px;
+   margin: auto;
+}
+.LABORATRIES p{
+   text-align: center;
+   margin: auto;
+   width: 80%;
+}
